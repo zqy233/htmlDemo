@@ -1,12 +1,11 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="animate.min.css">
-    <script src="swiper.animate.min.js"></script>
+    <!-- <link rel="stylesheet" href="animate.min.css">
+    <script src="swiper.animate.min.js"></script> -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.js"> </script>
@@ -20,7 +19,7 @@
         <!-- nav导航标签 -->
         <nav class="navbar navbar-expand-md navbar-dark" >
             <div class="container">
-                <a href="#" class="navbar-brand">Swiper</a>
+                <a href="#" class="navbar-brand" style="margin-left: 7px;">Swiper</a>
                 
                 <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
                     <span class="menu-icon-bar"></span>
@@ -35,17 +34,17 @@
                         <li class="dropdown">
                             <a href="#" class="nav-item nav-link" data-toggle="dropdown">动画</a>
                             <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item">Animation 1</a>
-                                <a href="#" class="dropdown-item">Animation 2</a>
-                                <a href="#" class="dropdown-item">Animation 3</a>
+                                <a href="#animation" class="dropdown-item">动画 1</a>
+                                <a href="#animation" class="dropdown-item">动画 2</a>
+                                <a href="#animation" class="dropdown-item">动画 3</a>
                             </div>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="nav-item nav-link" data-toggle="dropdown">轮播</a>
                             <div class="dropdown-menu">
-                                <a href="#swiperFirst" class="dropdown-item " >Swiper 1</a>
-                                <a href="#" class="dropdown-item">Swiper 2</a>
-                                <a href="#" class="dropdown-item">Swiper 3</a>
+                                <a href="#swiperFirst" class="dropdown-item ">轮播 1</a>
+                                <a href="#second" class="dropdown-item">轮播 2</a>
+                                <a href="#second" class="dropdown-item">轮播 3</a>
                             </div>
                         </li>
                         <li><a href="https://github.com/surmon-china/vue-awesome-swiper" class="nav-item nav-link">GitHub</a></li>
@@ -85,7 +84,7 @@
 
      <!-- Swiper轮播1 -->
      
-     <div class="swiper-container"  id="swiperFirst">
+     <div class="swiper-container swiperFirst"  id="swiperFirst">
          <div class="swiper-wrapper"  >
              <div class="swiper-slide first"  >
                  页面1
@@ -107,7 +106,71 @@
          <!-- 如果需要滚动条 -->
          <div class="swiper-scrollbar"></div>
      </div>
+
+
+   <!-- Swiper2 -->
+  <div class="swiper-container base" id="second">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide first">页面 1</div>
+      <div class="swiper-slide second">页面 2</div>
+      <div class="swiper-slide third">页面 3</div>
+      <div class="swiper-slide first">页面 4</div>
+      <div class="swiper-slide second">页面 5</div>
+      <div class="swiper-slide third">页面 6</div>
+      <div class="swiper-slide first">页面 7</div>
+      <div class="swiper-slide second">页面 8</div>
+      <div class="swiper-slide third">页面 9</div>
+     
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+    
+
+  <div class="swiper-container animation" id="animation">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide first" >页面1</div>
+      <div class="swiper-slide second">页面2</div>
+      <div class="swiper-slide third ">页面3</div>
+      <div class="swiper-slide first ">页面4</div>
+     
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <footer class="panel-footer" style="overflow: hidden;background-color:  #40869B;margin-top: 40px;" id="footer">
+    <div class="container" style="width: 100%;">
+  <div class="row footer-top" style="text-align: center;width: 100%;">
+  </div>
+  <hr style="border: 1px  solid #40869B; width: 100%;">
+  <div class="row" style="text-align: center;">
+   <div class="col-sm-3 col-md-3 col-lg-3 "  style="margin-bottom: 12px;">
+   <a href="#" style=" color: #fff;">首部</a>
+    </div>
+    <div class="col-sm-3 col-md-3 col-lg-3">
+   <a href="#footer" style=" color:  #fff;">联系</a></li>
+    </div>
+    <div class="col-sm-3 col-md-3 col-lg-3">
+   <a href="#footer" style=" color:  #fff;">关于</a></li>
+    </div>
+    <div class="col-sm-3 col-md-3 col-lg-3">
+   <a href="#footer" style=" color:  #fff;">致谢</a></li>
+    </div>
+  </div>
+    </div>
+  </footer>
     <style>
+      .container {
+    max-width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+}
         /* 字体 */
         @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
 @import url('https://fonts.googleapis.com/css?family=Lobster');
@@ -377,6 +440,8 @@ p {
     transform: scaleY(1);
   }
 }
+
+
 </style>
 <style>
 /* Swiper轮播1 */
@@ -386,13 +451,13 @@ p {
         }
      
         /* 这行重中之重 */
-      .swiper-slide-active{
-        width: 100%!important;
-      }                
+                    
         .swiper-container {
             width: 100%;
             height: 400px;
+            margin-top: 30px;
         }    
+
         .swiper-slide{
             text-align: center;
             line-height: 400px;
@@ -413,6 +478,31 @@ p {
         .third{
             background-color: #FF8604;
         }
+    </style>
+
+    <style>
+      .animation {
+        width: 94%;
+      height: 400px;
+    }
+    .swiper-pagination-bullet {
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+      font-size: 12px;
+      color:#000;
+      opacity: 1;
+      background: rgba(0,0,0,0.2);
+    }
+    .swiper-pagination-bullet-active {
+      color:#fff;
+      background: #007aff;
+    }
+    .swiperFirst .swiper-pagination-bullet{
+      width: 10px;
+      height: 10px;
+    }
     </style>
     <script>
         // 可以用箭头函数但没必要
@@ -457,7 +547,7 @@ p {
 
 <script>
 // 轮播1
-var mySwiper = new Swiper('.swiper-container', {
+var mySwiper = new Swiper('.swiperFirst', {
             // direction: 'vertical', 
             // 垂直切换选项
            // 循环模式选项
@@ -483,21 +573,58 @@ var mySwiper = new Swiper('.swiper-container', {
             // },
         })    
     </script>
+
+<!-- 轮播2 -->
+<script>
+  var swiper2 = new Swiper('.base', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      type: 'fraction'
+    },
+    autoplay: {
+          delay: 2000,
+          disableOnInteraction: false
+           },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
+
+<script>
+  var swiper1 = new Swiper('.animation', {
+    effect: 'cube',
+    grabCursor: true,
+    cubeEffect: {
+      shadow: true,
+      slideShadows: true,
+      shadowOffset: 20,
+      shadowScale: 0.94,
+    },
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false
+         },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+    }}
+  });
+</script>
 </body>
 </html>
-=======
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>HTML5练习</title>
-	</head>
-	<body>
-		<p align="center">
-			<a>
-				hello world
-			</a>
-		</p>
-	</body>
-</html>
->>>>>>> 3d34ae380b7e53a37edc882d2af7b2c709882cbe
