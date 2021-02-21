@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.w {
+    width: 100%;
+}
+
+.header {
+    height: 42px;
+    background-color: pink;
+}
+
+.header .logo {
+    float: left;
+    width: 198px;
+    height: 42px;
+    background-color: purple;
+}
+
+.header .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.header .nav {
+    float: left;
+}
+
+.nav ul li {
+    list-style: none;
+    float: left;
+    margin:0px 40px;
+    line-height: 42px;
+}
+
+.nav ul li a {
+    display: block;
+    height: 42px;   
+    text-decoration: none;
+}
+
+.nav ul li a:hover {
+    border-bottom: 2px solid #00a4ff;
+    color: #00a4ff;
+}
+.search{
+    float: left;
+    height: 42px;
+    width: 412px;
+    background-color: pink;
+}
+.search input{
+    float: left;
+    width: 360px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    font-size: 14px;
+    color: #bfbfbf;
+    text-indent:10px;
+}
+.search .button{
+    display: block;
+    border: 1px solid #00a4ff!important;
+    background: skyblue url(images/search.png)  content-box center center no-repeat;
+    background-size: contain;
+    float: left;
+    width: 42px;
+    height: 42px;
+    border: 0;
+}
